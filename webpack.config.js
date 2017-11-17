@@ -3,16 +3,16 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: 'index.html',
+    template: 'src/index.html',
     filename: 'index.html',
     inject: 'body'
 });
 
 
 module.exports = {
-    entry: [ './js/app.js'],
+    entry: [ './src/js/app.js'],
     output: {
-        path: __dirname + "/build/",
+        path: __dirname + "/",
         filename: 'bundle.js'
     },
     module: {
@@ -38,7 +38,7 @@ module.exports = {
         new ExtractTextPlugin('style.bundle.css')],
     devServer: {
         port: 8080,
-        contentBase: './build',
+        contentBase: './',
         inline: true
     }
 }
