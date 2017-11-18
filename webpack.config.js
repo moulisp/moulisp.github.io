@@ -10,7 +10,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 
 module.exports = {
-    entry: [ './src/js/app.js'],
+    entry: ['./src/js/app.js'],
     output: {
         path: __dirname + "/",
         filename: 'bundle.js'
@@ -23,13 +23,19 @@ module.exports = {
                 exclude: /node_modules/
             }, {
                 test: /\.html$/,
-                loader: "raw-loader" 
-              },
+                loader: "raw-loader"
+            },
+
+            {
+                test: /\.jpg$,\.png$,\.svg$/,
+                loader: "file-loader"
+            },
             {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract({
                     use: 'css-loader'
-                })
+                },  { test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/, loader: 'url-loader?limit=100000' }
+            )
             }
         ]
     },
