@@ -46,3 +46,10 @@ var _isVisible = (el)=>{
     var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
     return isVisible;
 }
+
+
+var elements = document.querySelectorAll(".pages");
+for (var i = 0; i < elements.length; ++i) {
+ elements[i].style["min-height"] = document.documentElement.clientWidth	;
+   
+}

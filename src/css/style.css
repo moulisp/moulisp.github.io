@@ -135,6 +135,68 @@ p.description{
 	 overflow: hidden;
 	 height:100%;
 }
+#portfolio img{
+  width:100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1100px)  {
+  .left-content{
+    display: none;
+  }
+  .right-content{
+    width:75%;
+    padding: 10px;
+  }
+  ul{
+      margin: 0px;
+      list-style-type: square;
+  }
+  .bgTitle{
+    background: url("");
+  }
+
+  #infoPage{
+    padding:0px;
+    width:100%;
+    margin: 40% 0px 0px;
+  }
+  #infoPage img {
+    display: block;
+    margin: auto;
+    float:none;
+  }
+  h1{
+    font-size: 2.5em;
+    text-align: center;
+  }
+  h2{
+    left:0px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #imageDiv{
+    margin: 0px 30%;
+  }
+  #contact .right-content li a span{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px)  {
+.slide .element i{
+  color:white;
+  font-size: 20px;
+}
+
+.menuBar .brand-container a .brand-initials, .menuBar .brand-container a .brand-name{
+  color: #413fc6;
+}
+.nav .slide .name{
+  display :none;
+}
+}
+
 
 
 
@@ -245,12 +307,16 @@ table.tecExp tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
+.description a, .description a:visited, .description a:hover, .description a:focus{
+  color:white;
+  font-style: oblique;
+}
 
 
 
 /* Floating menu - starts */
 header {
-  top: 30%;
+ 
   background: #393939;
   padding: 5px;;
   width: 130px;
@@ -471,6 +537,7 @@ nav .slide .name {
   .menuBar .brand-container a {
     display: block;
   }
+
 }
 
 
