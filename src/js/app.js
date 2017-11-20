@@ -50,6 +50,6 @@ var _isVisible = (el)=>{
 
 var elements = document.querySelectorAll(".pages");
 for (var i = 0; i < elements.length; ++i) {
- elements[i].style["min-height"] = document.documentElement.clientWidth	;
+ elements[i].style["min-height"] =window.innerHeight + "px"	;
    
 }
