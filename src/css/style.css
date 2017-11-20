@@ -307,7 +307,7 @@ table.tecExp tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
-.description a, .description a:visited, .description a:hover, .description a:focus{
+.description a{
   color:white;
   font-style: oblique;
 }
@@ -326,6 +326,7 @@ header {
 
 a {
   text-decoration: none;
+  color:white;
 }
 
 nav {
