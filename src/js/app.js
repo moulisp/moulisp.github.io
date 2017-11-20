@@ -53,3 +53,6 @@ for (var i = 0; i < elements.length; ++i) {
  elements[i].style["min-height"] =window.innerHeight + "px"	;
    
 }
+
+var arrowElement = document.querySelectorAll(".arrow")[0];
+arrowElement.onclick= (event) =>{ location.href="#about"}

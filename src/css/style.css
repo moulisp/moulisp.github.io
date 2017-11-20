@@ -616,7 +616,9 @@ nav .slide .name {
     position: absolute;
     left: 50%;
 }
-
+.arrow:hover {
+    cursor: pointer;
+}
 .arrow {
     width: 40px;
     height: 40px;
