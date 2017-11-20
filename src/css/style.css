@@ -311,7 +311,10 @@ table.tecExp tfoot .links a{
   color:white;
   font-style: oblique;
 }
-
+#contact a{
+  color:black;
+  font-style: none;
+}
 
 
 /* Floating menu - starts */
@@ -373,10 +376,10 @@ nav div.nav-container > div:nth-of-type(5n+3) .slide, nav div.nav-container > di
   border-color: #ffa61a;
 }
 nav div.nav-container > div:nth-of-type(5n+3) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
-  color: #b36d00;
+  color: #ffa61a;
 }
 nav div.nav-container > div:nth-of-type(5n+3) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+3) a ~ .child-menu {
-  background-color: #ffba4d;
+  background-color: #ffa61a;
 }
 nav div.nav-container > div:nth-of-type(5n+3) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+3) .slide.active ~ label {
   color: #ffa61a;
