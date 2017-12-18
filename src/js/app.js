@@ -30,7 +30,12 @@ for (var i = 0; i < elements.length; ++i) {
 		var elemTop = el.getBoundingClientRect().top;
     	var elemBottom = el.getBoundingClientRect().bottom;
 		if(elemTop < window.innerHeight && elemBottom >= 0 ){
-			el.parentElement.scrollIntoView( {behavior :"auto", block: "start", inline: "nearest"});
+			//el.parentElement.scrollIntoView( {behavior :"auto", block: "start", inline: "nearest"});
+			window.scrollTo({
+				'behavior': 'smooth',
+				'left': 0,
+				'top': el.parentElement.offsetTop
+			  });
     	}
     };
 }
@@ -55,4 +60,10 @@ for (var i = 0; i < elements.length; ++i) {
 }
 
 var arrowElement = document.querySelectorAll(".arrow")[0];
-arrowElement.onclick= (event) =>{ location.href="#about"}
+arrowElement.onclick= (event) =>{ 
+	window.scrollTo({
+		'behavior': 'smooth',
+		'left': 0,
+		'top': document.getElementById("about_page").offsetTop
+	  });
+}
