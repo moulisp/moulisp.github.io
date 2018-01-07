@@ -1,13 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-
-const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: 'src/index.html',
-    filename: 'index.html',
-    inject: 'body'
-});
-
+const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({template: 'src/index.html', filename: 'index.html', inject: 'body'});
 
 module.exports = {
     entry: ['./src/js/app.js'],
@@ -15,7 +9,7 @@ module.exports = {
         path: __dirname + "/",
         filename: 'bundle.js'
     },
-    
+
     module: {
         loaders: [
             {
@@ -25,24 +19,23 @@ module.exports = {
             }, {
                 test: /\.html$/,
                 loader: "raw-loader"
-            },
-
-            {
-                test: /\.jpg$,\.png$,\.svg$/,
+            }, {
+                test: /\.jpg$,\.png$,\.svg$,\.ico$/,
                 loader: "file-loader"
-            },
-            {
+            }, {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract({
                     use: 'css-loader'
-                },  { test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/, loader: 'url-loader?limit=100000' }
-            )
+                }, {
+                    test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/,
+                    loader: 'url-loader?limit=100000'
+                })
             }
         ]
     },
     plugins: [
-        HtmlWebpackPluginConfig,
-        new ExtractTextPlugin('style.bundle.css')],
+        HtmlWebpackPluginConfig, new ExtractTextPlugin('style.bundle.css')
+    ],
     devServer: {
         port: 8080,
         contentBase: './',
