@@ -6411,7 +6411,7 @@ img::-moz-selection {
                       NAVBAR
 ======================================================*/
 #mainNav {
-  background-color: #212529; }
+  background-color: #56C15F; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -6419,8 +6419,10 @@ img::-moz-selection {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #56C15F;
+    background-color: #495057;
     font-family: 'Lato', sans-serif; }
+    #mainNav .navbar-toggler:focus {
+      outline: 0; }
   #mainNav .navbar-brand img {
     max-height: 65px; }
   #mainNav .navbar-nav .nav-item .nav-link {
