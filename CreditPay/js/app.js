@@ -1,10 +1,3 @@
-/*
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
-*/ 
-
 /* ====================================================
                         ANIMATION
    ================================================= */
@@ -69,33 +62,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 })(jQuery); // End of use strict
 
 
-/*====================================================
-                    GALlERY
-====================================================*/
-$(function() {
-    $("#gallery-slider").owlCarousel({
-        items: 3,
-        smartSpeed: 700,
-        autoplay: true,
-        loop: true,
-        pagination: true,
-        slideSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            500: {
-                items: 2
-            },
-            767: {
-                items: 2
-            },
-            992: {
-                items: 3
-            } 
-        }
-    });
-});
 
 /* ====================================================
                        BACK TO TOP

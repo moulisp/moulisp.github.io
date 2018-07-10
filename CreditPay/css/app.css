@@ -6283,12 +6283,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-/*
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
-*/
 /*====================================================
                       GLOBAL STYLE
 ======================================================*/
@@ -6300,12 +6294,12 @@ p {
   line-height: 1.75; }
 
 a {
-  color: teal; }
+  color: #56C15F; }
   a:hover {
-    color: #004d4d; }
+    color: #3da746; }
 
 .text-primary {
-  color: teal !important; }
+  color: #56C15F !important; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -6338,21 +6332,21 @@ section {
   padding: 20px 40px; }
 
 .btn-primary {
-  background-color: teal;
-  border-color: teal; }
+  background-color: #56C15F;
+  border-color: #56C15F; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #005a5a !important;
-    border-color: #005a5a !important;
+    background-color: #41b04a !important;
+    border-color: #41b04a !important;
     color: white; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important; }
 
 ::-moz-selection {
-  background: teal;
+  background: #56C15F;
   text-shadow: none; }
 
 ::selection {
-  background: teal;
+  background: #56C15F;
   text-shadow: none; }
 
 img::selection {
@@ -6385,32 +6379,32 @@ img::-moz-selection {
   font-family: 'Lato', sans-serif; }
 
 .btn-white {
-  border-color: teal;
-  background-color: teal;
+  border-color: #56C15F;
+  background-color: #56C15F;
   color: #fff; }
   .btn-white:hover, .btn-white:focus {
     background-color: transparent;
-    color: teal;
+    color: #56C15F;
     cursor: pointer; }
 
 .btn-greenish-blue {
-  border-color: teal;
-  color: teal; }
+  border-color: #56C15F;
+  color: #56C15F; }
   .btn-greenish-blue:hover, .btn-greenish-blue:focus {
-    background-color: teal;
+    background-color: #56C15F;
     color: #fff;
     cursor: pointer; }
 
 .heading-border {
   width: 100px;
   height: 5px;
-  background-color: teal;
+  background-color: #56C15F;
   margin: 0 auto 20px auto; }
 
 .heading-border-light {
   width: 30px;
   height: 5px;
-  background-color: teal;
+  background-color: #56C15F;
   margin: 0 0 20px 0; }
 
 /*====================================================
@@ -6425,10 +6419,10 @@ img::-moz-selection {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: teal;
+    background-color: #56C15F;
     font-family: 'Lato', sans-serif; }
   #mainNav .navbar-brand img {
-    max-height: 45px; }
+    max-height: 65px; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -6455,22 +6449,25 @@ img::-moz-selection {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #f8f9fa;
+      background-color: #56C15F;
+      opacity: .9;
       box-shadow: 0px 1px 5px 1px rgba(179, 174, 174, 0.5); }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.55em;
         padding: 12px 0; }
+        #mainNav.navbar-shrink .navbar-brand img {
+          max-height: 45px; }
       #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-        font-size: 80%;
-        font-weight: 600;
-        padding: 0.75em 0;
-        letter-spacing: 0px;
+        /* font-size: 80%; 
+            font-weight: 600;
+            padding: 0.75em 0; 
+            letter-spacing: 0px;*/
         color: #6c757d;
         font-family: 'Roboto', sans-serif; }
         #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link a {
           font-size: 14px; }
         #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active, #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-          color: teal; } }
+          color: #fff; } }
 
 /*====================================================
                     	heading
@@ -6482,7 +6479,7 @@ section .heading {
   section .heading .bord-bot {
     width: 80px;
     margin: 0 auto;
-    border-bottom: 7px solid teal; }
+    border-bottom: 7px solid #56C15F; }
   section .heading p {
     margin-top: 10px;
     color: #6c757d;
@@ -6500,8 +6497,8 @@ section.masthead {
   padding-bottom: 100px;
   color: white;
   background: teal;
-  background: -webkit-linear-gradient(to right bottom, teal 55%, #3ba537);
-  background: linear-gradient(to right bottom, teal 55%, #3ba537); }
+  background: -webkit-linear-gradient(to left top, #56C15F, teal);
+  background: linear-gradient(to right bottom, #56C15F 55%, teal); }
   section.masthead .header-content {
     max-width: 500px;
     text-align: center; }
@@ -6579,7 +6576,7 @@ section.masthead {
     line-height: 38px;
     text-align: center;
     box-shadow: 0px 0px 14px -1px rgba(101, 99, 99, 0.35);
-    color: teal; }
+    color: #56C15F; }
   .app-about .app-about-cont h3 {
     color: #6c757d; }
   .app-about .app-about-cont p {
@@ -6657,7 +6654,7 @@ section.masthead {
     margin-top: 50px; }
     .our-process .service-desc-cont i {
       font-size: 25px;
-      color: teal;
+      color: #56C15F;
       margin-bottom: 10px; }
     .our-process .service-desc-cont h5 {
       font-size: 18px;
@@ -6672,7 +6669,7 @@ section.masthead {
 .faq .card {
   background: transparent; }
   .faq .card .card-header {
-    background: teal; }
+    background: #56C15F; }
     .faq .card .card-header h5 button {
       color: #fff;
       text-decoration: none; }
@@ -6684,7 +6681,7 @@ section.masthead {
         background: #fff;
         line-height: 50px;
         top: 2px;
-        color: teal; }
+        color: #56C15F; }
   .faq .card .card-body {
     background: #e9ecef;
     color: #adb5bd; }
@@ -6712,7 +6709,7 @@ section.masthead {
                         DOWNLOAD
 ======================================================*/
 .download-app {
-  background: teal; }
+  background: #56C15F; }
   .download-app h1, .download-app p {
     color: #fff; }
   .download-app .apple {
