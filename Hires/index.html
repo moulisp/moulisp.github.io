@@ -12,16 +12,24 @@
 
     <title>Hires!</title>
     <style>
-/* .jumbotron {
-    background-color:transparent !important; 
-} */
-
-.hiw-icon{
-    width: 220px;
-    height:135px;
-    padding-bottom: .5rem; 
-}
-
+    @media only screen and (max-width: 768px) {
+        .navbar  {
+            border-color: white;
+            background-color: white;
+        } 
+        main section.jumbotron.text-center {
+            top: 80px;
+            position: relative;
+        }
+    }
+    .jumbotron{
+        background-color: white;
+    }
+    .hiw-icon{
+        width: 220px;
+        height:135px;
+        padding-bottom: .5rem; 
+    }
 
     </style>
 </head>
